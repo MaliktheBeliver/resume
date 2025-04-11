@@ -198,7 +198,7 @@ pre {
 /* Cloud */
 .about-me .grid {
   grid-template-columns: 4fr 3fr;
-  padding: 5rem 0;
+  padding: 5rem 1rem;
 }
 
 /* Languages */
@@ -367,6 +367,10 @@ pre {
   .academics-main .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+  }
+  .about-me {
+    display: flex;
+flex-direction: column-reverse;
   }
 
   .showcase {
