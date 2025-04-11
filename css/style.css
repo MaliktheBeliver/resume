@@ -362,7 +362,7 @@ pre {
   .showcase .grid,
   .stats .grid,
   .cli .grid,
-  .cloud .grid,
+  .about-me .grid,
   .project-main .grid,
   .academics-main .grid {
     grid-template-columns: 1fr;

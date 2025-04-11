@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Typewriting
 const texts = [
-    "I am a Front-End Developer",
+    "I am a FrontEnd Developer",
     "I am a UI/UX Designer",
     "I love Javascript ❤️"
   ];
