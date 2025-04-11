@@ -213,7 +213,6 @@ pre {
   width: 200px;
   justify-self: flex-end;
 }
-
 .project-sub-head img {
   width: 300px;
   justify-self: flex-end;
@@ -227,6 +226,26 @@ pre {
 .project-main img{
   height: 55px;
   width: 50px;
+}
+.project-main .container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 2rem 0 ;
+}
+.project-main .flex{
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  height: 400px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  /* padding: 20px; */
+  /* text-align: center; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
 /* academics */
