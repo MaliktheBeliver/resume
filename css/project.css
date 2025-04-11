@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
-    padding: 5rem 5px;
+    padding: 5rem 0.7rem;
   }
   .project-card {
     flex: 1 1 300px;
@@ -17,6 +17,9 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeIn 1s ease forwards;
     opacity: 0;
+  }
+  .project-card-title{
+    padding-top: 1rem;
   }
 
   .project-card:nth-child(1) { animation-delay: 0.2s; }

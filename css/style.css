@@ -88,7 +88,20 @@ pre {
   color: #fff;
   position: relative;
 }
+.typewriter-container{
+  height: 50px;
+}
+.typewriter {
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #38bdf8;
+  animation: blink-caret 0.75s step-end infinite;
+}
 
+@keyframes blink-caret {
+  50% { border-color: transparent; }
+}
 .showcase h1 {
   font-size: 40px;
 }
@@ -106,6 +119,7 @@ pre {
 .showcase-text {
   animation: slideInFromLeft 1s ease-in;
 }
+
 
 .showcase-form {
   position: relative;
@@ -182,13 +196,18 @@ pre {
 }
 
 /* Cloud */
-.cloud .grid {
+.about-me .grid {
   grid-template-columns: 4fr 3fr;
+  padding: 5rem 0;
 }
 
 /* Languages */
 
-.languages .flex {
+.languages  {
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+.flex{
   flex-wrap: wrap;
 }
 

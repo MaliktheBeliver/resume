@@ -31,3 +31,44 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// Typewriting
+const texts = [
+    "I am a Front-End Developer",
+    "I am a UI/UX Designer",
+    "I love Javascript ❤️"
+  ];
+
+  const speed = 100;
+  const deleteSpeed = 50;
+  const delayBetween = 1500;
+
+  let i = 0; // text index
+  let j = 0; // char index
+  let isDeleting = false;
+
+  const el = document.getElementById("typewriter");
+
+  function type() {
+    const current = texts[i];
+    if (isDeleting) {
+      el.textContent = current.substring(0, j--);
+      if (j < 0) {
+        isDeleting = false;
+        i = (i + 1) % texts.length;
+        setTimeout(type, 500);
+      } else {
+        setTimeout(type, deleteSpeed);
+      }
+    } else {
+      el.textContent = current.substring(0, j++);
+      if (j > current.length) {
+        isDeleting = true;
+        setTimeout(type, delayBetween);
+      } else {
+        setTimeout(type, speed);
+      }
+    }
+  }
+
+  type();
